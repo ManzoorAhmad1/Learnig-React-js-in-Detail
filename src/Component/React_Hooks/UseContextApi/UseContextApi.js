@@ -1,14 +1,14 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 
 export const GlobalApiContext = createContext();
 
 const UseContextApi = (props) => {
-    const [counter] = useState(0);
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         setCounter(counter + 1)
-    //     }, 1000);
-    // }, [counter])
+    const [counter, setCounter] = useState(0);
+    useEffect(() => {
+        setTimeout(() => {
+            setCounter(counter + 1)
+        }, 1000);
+    }, [counter])
     return (
         <GlobalApiContext.Provider value={{ apiCounter: counter }}>
             {props.children}
