@@ -5,7 +5,7 @@ import Model from './Component/Portal/Portal';
 import { Fragment, useState } from 'react';
 import StateComponent from './Component/React_Hooks/UseStateComponent';
 import UseRefComponent from './Component/React_Hooks/UseRefComponent';
-
+import UseReducerComponent from './Component/React_Hooks/UseContextApi/UseReducerComponent';
 // import UseEffectComponent from "./Component/React_Hooks/UseEffectComponent";
 // import UseContextApi from './Component/React_Hooks/UseContextApi/UseContextApi';
 // import ChildComponent from "./Component/React_Hooks/UseContextApi/ChildComponent"
@@ -17,6 +17,7 @@ function App() {
   return (
 
     <Fragment>
+      <UseReducerComponent />
       <ParentProps />
       <StateComponent />
       <button onClick={portalHandler}>Portal</button>
