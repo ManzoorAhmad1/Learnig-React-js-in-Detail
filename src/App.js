@@ -11,6 +11,7 @@ import ReactMemo from './Component/React_Hooks/React_Memo';
 // import UseContextApi from './Component/React_Hooks/UseContextApi/UseContextApi';
 // import ChildComponent from "./Component/React_Hooks/UseContextApi/ChildComponent"
 import UseCallBackComponent from "./Component/React_Hooks/UseCallBackComponent"
+import UseMemoComponent from './Component/React_Hooks/UseMemoComponent';
 function App() {
   const [showPortal, setShowPortal] = useState(false)
   const portalHandler = () => {
@@ -19,6 +20,7 @@ function App() {
   return (
 
     <Fragment>
+      <UseMemoComponent />
       <UseCallBackComponent />
       <UseReducerComponent />
       <ParentProps />
